@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "krzys-mod",
+	"version": "${version}",
+	"name": "krzys Mod",
+	"description": "hello there",
+	"authors": [
+		"Krzys!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/krzys-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.krzysztof.tutorialmod.KrzysMod"
+		],
+		"client": [
+			"net.krzysztof.tutorialmod.KrzysModClient"
+		],
+		"fabric-datagen": [
+			"net.krzysztof.tutorialmod.KrzysModDataGenerator"
+		]
+	},
+	"mixins": [
+		"krzys-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
